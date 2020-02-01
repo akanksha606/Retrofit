@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
                   for(int i=0;i<heroes.size();i++){
                     heronames[i]=heroes.get(i).getName();
                   }
-                  listView.setAdapter(new ArrayAdapter<String>(getApplicationContext(),android.R.layout.activity_list_item,heronames));
+                  listView.setAdapter(new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,heronames));
                   for(Hero h:heroes){
                       Log.d("name",h.getName());
                       Log.d("realname",h.getRealname());
